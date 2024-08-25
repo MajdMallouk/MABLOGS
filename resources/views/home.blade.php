@@ -47,4 +47,7 @@
 
         </div>
     @endforeach
+    <div>
+        {{ $blogs->links() }}
+    </div>
 </x-layout>

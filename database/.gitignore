@@ -1,1 +1,13 @@
-*.sqlite*
+/vendor/                # Composer dependencies
+/node_modules/          # Node.js dependencies (if using Laravel Mix)
+/public/hot             # Laravel Mix Hot Module Replacement file
+/public/storage         # Symlink to storage/app/public
+/storage/*.key          # Encryption keys
+/.env                   # Environment variables file
+/.env.*                 # Environment variables per environment (e.g., .env.testing)
+/Homestead.yaml         # Homestead Vagrant file
+/Homestead.json         # Homestead Vagrant file
+# Ignore SQLite database files
+*.sqlite
+*.sqlite3
+*.db

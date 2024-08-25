@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('home', [
-        'blogs' => Blog::orderBy('created_at', 'desc')->get()
+        'blogs' => Blog::with(['author', 'tags'])->orderBy('created_at', 'desc')->paginate(7)
     ]);
 });
 
